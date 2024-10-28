@@ -24,5 +24,11 @@
 
             </Grid>
         </TabItem>
+        <TabItem Header="Задание 3">
+            <Grid>
+                <Button Margin="254,21,254,329" Content="Загрузить фото" Click="Button_LoadImage"/>
+                <Image Name="img1" HorizontalAlignment="Left" Height="250" Margin="145,98,0,0" VerticalAlignment="Top" Width="500"/>
+            </Grid>
+        </TabItem>
     </TabControl>
 </Window>

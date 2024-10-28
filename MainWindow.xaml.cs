@@ -66,5 +66,19 @@ namespace WpfApp2
         {
 
         }
+
+        private void Button_LoadImage(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFile = new OpenFileDialog
+            {
+                Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp|All Files|*.*"
+            };
+
+            if (openFile.ShowDialog() == true)
+            {
+                string fileName = openFile.FileName;
+                img1.Source = new BitmapImage(new Uri(fileName));
+            }
+        }
     }
 }
